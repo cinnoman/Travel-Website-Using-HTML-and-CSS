@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/mine-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+
+}
+
+.logo{
+    width: 190px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.register_button{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 12%;
+}
+
+.search-box{
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-box form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-box form button{
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box form img{
+    width: 15px;
+    margin-top: 5px;
+}
+
+.location-input{
+    flex: 1;
+}
+
+.search-box form label{
+    font-weight: 600;
+}
+
+/* exclusives */
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusive div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusive div{
+    position: relative;
+}
+
+.exclusive div span{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: white; */
+    text-align: center;
+    font-weight: 400;
+}
+
+/* trending places */
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* call to action */
+
+.cta {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-button{
+    background: #ff5361;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Travellers Stories */
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories p{
+    /* width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 26px; */
+    text-align: center;
+    font-weight: 400;
+}
+
+.start-button{
+    text-decoration: none;
+    background-color: #ff5361;
+    color: white;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+/* About Section */
+
+.about-section{
+    text-align: center;
+    margin: 80px 0;
+    columns: #333;
+    font-size: 17px;
+}
+
+.about-section h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* footer */
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p{
+    padding-bottom: 15px;
+}
+
+/* Responsive */
+/* @media only screen and (max-width:700px){
+
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        z-index: 100;
+        display:inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+    }
+
+    nav .nav_links{
+        margin: 10px 0;
+        display: block;
+    }
+
+} */
+
+/* Listing Page */
+
+.nav-white{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.nav-white .nav_links li a{
+    color: black;
+}
+
+.nav-white .register_button{
+    background: #ff5361;
+    color: white;
+}
+
+/* nav.nav-white .fa-bars{
+    color: #000;
+}
+
+nav.nav-white .active::after{
+    background: #ff5361;
+} */
+
+.list-container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-column{
+    flex-basis: 70%;
+}
+
+.right-column{
+    flex-basis: 25%;
+}
+
+.left-column h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-image{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    /* color: #555; */
+}
+
+.house-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    /* color: #333; */
+    font-size: 22px;
+    margin: 4px 0;
+    /* color: #555; */
+}
+
+.house-info i {
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+.house-price{
+    text-align: right;
+}
+
+.house-price h4{
+    font-size: 20px;
+}
+
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2{
+    font-weight: 500;
+}
+
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p{
+    flex: 1;
+}
+
+.filter input{
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.sidebar-link {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.sidebar-link a{
+    text-decoration: none;
+
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.right-arrow{
+    transform: rotate(180deg);
+}
+
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .current{
+    background: black;
+    color: white;
+}
+
+
+/* House Details Page  */
+.house-details{
+    padding: 0 12%;
+}
+
+.house-title{
+    margin-top: 40px;
+}
+
+.house-title h1{
+    font-weight: 500;
+}
+
+.house-title .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.house-title span{
+    margin: 0 20px;
+}
+
+.house-title i{
+    color: #ff5361;
+    font-size: 14px;
+}
+
+.gallary{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'hello hello . .' 'hello hello . .';
+    margin: 20px 0;
+}
+
+.gallary img{
+    width: 100%;
+    display:block;
+    border-radius: 10px;
+}
+
+.gallary-img1{
+    grid-area: hello;
+}
+
+.small-details h2{
+    font-weight: 500;
+}
+
+.small-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.checkform{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.checkform label{
+    display: block;
+}
+
+.checkform div{
+    padding: 20px;
+}
+
+.checkform input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.checkform button{
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.guest{
+    flex: 1;
+}
+
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+}
+
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+
+.details-list li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.details-list li i{
+    position: absolute;
+    top: 5px; 
+    left: -40px;
+}
+
+.home-description{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map {
+    margin: 50px 0;
+}
+
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+.map b{
+    display: block;
+    margin-bottom: 16px;
+}
+
+
+.host{
+    display: flex;
+    align-items: center;
+}
+
+.host img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.host h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.host i{
+    color: #ff5361;
+}
+
+.contact-host{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 50px;
+    border: 1px solid #ff5361;
+    border-radius: 8px;
+}
+
+/* login and reg */
+
+/* General styles for form container */
+.form-container {
+    max-width: 400px;
+    margin: 180px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'poppins', sans-serif;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5361;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-container button:hover {
+    background-color: #e04a55;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-container a {
+    color: #ff5361;
+    text-decoration: none;
+    font-weight: 600;
+}
